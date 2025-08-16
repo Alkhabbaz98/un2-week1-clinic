@@ -8,18 +8,18 @@
 <body>
     <h1>Update Appointment</h1>
 
-    <form action="/appointments/<%= foundApp._id %>?_method=put" method="post">
+    <form action="/appointments/<%= updateApp._id %>?_method=put" method="post">
         <label for="patientName">Patient Name: </label>
-        <input value="<%= foundApp.name %>" type="text" name="patientName" id="patientName">
+        <input value="<%= updateApp.name %>" type="text" name="patientName" id="patientName">
 
         <label for="reason">Reason: </label>
-        <input value="<%= foundApp.reason %>" type="text" name="reason" id="reason">
+        <input value="<%= updateApp.reason %>" type="text" name="reason" id="reason">
 
         <label for="date">Date: </label>
-        <input value="<%= foundApp.date %>" type="date" name="date" id="date">
+        <input value="<%= updateApp.date %>" type="date" name="date" id="date">
 
         <label for="doctor">Doctor: </label>
-        <input value="<%= foundApp.doctor %>" type="text" name="doctor" id="doctor">
+        <input value="<%= updateApp.doctor %>" type="text" name="doctor" id="doctor">
 
 
         <button type="submit">Update</button>

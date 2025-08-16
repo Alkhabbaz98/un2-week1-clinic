@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Doctor</title>
+</head>
+<body>
+    <h1>Update Doctor's information</h1>
+
+    <form action="/doctors/<%= updateDoc._id %>?_method=put" method="post">
+        <label for="doctorName">Name: </label>
+        <input value="<%= updateDoc.name %>" name="name" id="doctorName">
+
+        <label for="specialty">Doctor's Specialty: </label>
+        <input value="<%= updateDoc.specialty %>" name="specialty" id="specialty" type="text">
+
+        <label for="yearsOfExperience">Years of Exp: </label>
+        <input value="<%= updateDoc.yearsOfExperience %>" type="number" name="yearsOfExperience" id="yearsOfExperience">
+
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

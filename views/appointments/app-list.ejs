@@ -15,14 +15,17 @@
     <p>Doctor Name: <%= oneApp.doctor %></p>
     
     
-    <form action="/cars/<%=oneApp._id%>?_method=DELETE" method="post">
+    <form action="/appointments/<%=oneApp._id%>?_method=DELETE" method="post">
     <br>
-    <button type="submit">Delete Appointment</button>
+        <button type="submit">Delete Appointment</button>
     <br>
     </form>
     <br>
     <a href="/appointments/<%= oneApp._id %>/update">
-    <button type="submit">Update Appointment</button>
+        <button type="submit">Update Appointment</button>
+    </a>
+    <a href="/appointments/<%= oneApp._id %>">
+        <button>Check Appointment</button>
     </a>
     <hr>
     

@@ -10,7 +10,7 @@ const doctorSchema = new Schema ({
         required: true,
     },
 
-    yearsOfExpreience: {
+    yearsOfExperience: {
         type: Number, 
         required: true,
     }

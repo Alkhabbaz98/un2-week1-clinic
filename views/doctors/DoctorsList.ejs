@@ -11,7 +11,18 @@
 
     <p>Doctor Name: <%= oneDoctor.name %></p>
     <p>Specialty: <%= oneDoctor.specialty %></p>
-    <p>Years of Experience: <%= oneDoctor.yearsOfExpreience %></p>
+    <p>Years of Experience: <%= oneDoctor.yearsOfExperience %></p>
+    <a href="/doctors/<%= oneDoctor._id %>">
+        <button>Check One</button>
+    </a>
+    <form action="/doctors/<%=oneDoctor._id %>?_method=DELETE" method="post">
+        <br>
+            <button type="submit">Delete Doc</button>
+    </form>
+    <br>
+    <a href="/doctors/<%= oneDoctor._id %>/update">
+    <button type="submit">Update Doctor</button>
+    </a>
 
 <% }) %>
 </body>
